@@ -11,21 +11,55 @@ class WashroomsTableSeeder extends Seeder {
     public function run()
     {
         DB::table('washrooms')->insert([
-            'name'                 => 'Men\'s Washroom @ 5F',
-            'location_description' => '5th floor, near the elevators',
-            'establishment_id'     => 1
+            'establishment_id'      => 1,
+            'name'                  => 'Men\'s Washroom @ 5F',
+            'location_description'  => '5th floor, near the elevators',
+            'open_hours'            => '24 hours, Monday-Friday',
+            'latitude'              => '14.554036',
+            'longitude'             => '121.021707',
+            'is_sponsored'          => true,
+            'gender_is_female_only' => false,
+            'gender_is_male_only'   => true,
+            'gender_is_unisex'      => false,
+            'gender_has_both'       => false,
+            'is_free'               => true,
+            'need_membership'       => true,
+            'has_water'             => true,
+            'has_soap'              => false,
+            'has_shower'            => false,
+            'has_wifi'              => true,
+            'has_tv'                => false,
+            'has_tissues'           => true,
+            'has_bidet'             => true,
+            'is_pwd_friendly'       => false,
+            'has_vending_machine'   => false,
+            'has_diaper_station'    => false,
         ]);
 
         DB::table('washrooms')->insert([
-            'name'                 => 'Women\'s Washroom @ 5F',
-            'location_description' => '4th floor, near the elevators',
-            'establishment_id'     => 1
-        ]);
-
-        DB::table('washrooms')->insert([
-            'name'                 => 'Jollibee',
-            'location_description' => '2nd floor, beside McDonalds',
-            'establishment_id'     => 2
+            'establishment_id'      => 1,
+            'name'                  => 'Women\'s Washroom @ 5F',
+            'location_description'  => '5th floor, near the elevators',
+            'open_hours'            => '24 hours, Monday-Friday',
+            'latitude'              => '14.554036',
+            'longitude'             => '121.021707',
+            'is_sponsored'          => true,
+            'gender_is_female_only' => true,
+            'gender_is_male_only'   => false,
+            'gender_is_unisex'      => false,
+            'gender_has_both'       => false,
+            'is_free'               => true,
+            'need_membership'       => true,
+            'has_water'             => true,
+            'has_soap'              => false,
+            'has_shower'            => false,
+            'has_wifi'              => true,
+            'has_tv'                => false,
+            'has_tissues'           => true,
+            'has_bidet'             => true,
+            'is_pwd_friendly'       => false,
+            'has_vending_machine'   => false,
+            'has_diaper_station'    => false,
         ]);
     }
 }
