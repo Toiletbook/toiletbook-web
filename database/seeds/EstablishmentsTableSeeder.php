@@ -75,5 +75,6 @@ class EstablishmentsTableSeeder extends Seeder
             'area_id' => '3',
             'id' => '10',
         ]);
+
     }
 }
