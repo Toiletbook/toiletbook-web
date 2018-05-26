@@ -25,6 +25,10 @@ class Washroom extends Model
         return $this->hasMany(Attribute::class);
     }
 
+    public function visitors() {
+        return $this->hasMany(Visitor::class);
+    }
+
     public function getGeneralRatingAttribute()
     {
         try {
