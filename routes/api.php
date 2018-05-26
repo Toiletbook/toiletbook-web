@@ -25,3 +25,6 @@ Route::delete('/washrooms/{id}', 'WashroomController@destroy');
 
 Route::get('/areas', 'AreaController@index');
 Route::get('/areas/{id}', 'AreaController@show');
+
+Route::get('/establishments', 'EstablishmentController@index');
+Route::get('/establishments/{id}', 'EstablishmentController@show');
