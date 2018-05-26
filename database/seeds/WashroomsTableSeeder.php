@@ -61,5 +61,32 @@ class WashroomsTableSeeder extends Seeder {
             'has_vending_machine'   => false,
             'has_diaper_station'    => false,
         ]);
+
+        DB::table('washrooms')->insert([
+            'establishment_id'      => 2,
+            'name'                  => 'Women\'s Washroom @ 5F',
+            'location_description'  => 'Near the ATM Center',
+            'open_hours'            => '9:00am to 10:00pm, Sunday to Saturday',
+            'latitude'              => '14.554036',
+            'longitude'             => '',
+            'is_sponsored'          => false,
+            'gender_is_female_only' => true,
+            'gender_is_male_only'   => false,
+            'gender_is_unisex'      => false,
+            'gender_has_both'       => false,
+            'is_free'               => false,
+            'need_membership'       => false,
+            'has_water'             => true,
+            'has_soap'              => true,
+            'has_shower'            => false,
+            'has_wifi'              => false,
+            'has_tv'                => false,
+            'has_tissues'           => true,
+            'has_bidet'             => true,
+            'is_pwd_friendly'       => false,
+            'has_vending_machine'   => false,
+            'has_diaper_station'    => false,
+        ]);
+
     }
 }
