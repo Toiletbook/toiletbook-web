@@ -12,4 +12,8 @@ class Washroom extends Model
     {
         return $this->belongsTo(Establishment::class);
     }
+
+    public function attributes() {
+        return $this->hasMany(Attribute::class);
+    }
 }

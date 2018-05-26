@@ -16,7 +16,7 @@ class WashroomController extends Controller
      */
     public function index()
     {
-        $washrooms = Washroom::all()->toArray();
+        $washrooms = Washroom::with(['establishment.area', 'attributes'])->get()->toArray();
         return response()->json([
             'message' => 'washroom list',
             'data' => $washrooms

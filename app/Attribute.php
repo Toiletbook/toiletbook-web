@@ -6,11 +6,24 @@ use Illuminate\Database\Eloquent\Model;
 
 class Attribute extends Model
 {
-    public function establishment() {
-        return $this->belongsTo(Establishment::class);
+    protected $appends = ['average_rating'];
+
+    protected $hidden = ['ratings', 'created_at', 'updated_at', 'washroom_id'];
+
+    public function washroom() {
+        return $this->belongsTo(Washroom::class);
     }
 
     public function ratings() {
         return $this->hasMany(Rating::class);
+    }
+
+    public function getAverageRatingAttribute()
+    {
+        try {
+            return floor($this->ratings->sum('value') / $this->ratings->count() * 2) / 2;
+        } catch (\DivisionByZeroError $e) {
+            return 0;
+        }
     }
 }
