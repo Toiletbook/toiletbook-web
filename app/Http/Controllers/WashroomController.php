@@ -4,6 +4,8 @@ namespace ToiletBook\Http\Controllers;
 
 use ToiletBook\Washroom;
 use Illuminate\Http\Request;
+use ToiletBook\Establishment;
+use ToiletBook\Area;
 
 class WashroomController extends Controller
 {
@@ -41,17 +43,27 @@ class WashroomController extends Controller
     {
         $validator = \Validator::make($request->all(), [
             'name' => 'required|max:255',
+            'area_name' => 'required',
+            'establishment_name' => 'required',
             'location_description' => 'required'
         ]);
 
         if($validator->fails()) {
-            return \App::abort(500);
+            return response()->json([
+                'message' => 'parameter error'
+            ], 401);
         }
+
+        $area = Area::firstOrCreate(['name' => $request->area_name]);
+        $establishment = Establishment::firstOrCreate([
+            'name' => $request->establishment_name,
+            'area_id' => $area->id
+        ]);
 
         $washroom = Washroom::create([
             'name' => $request->name,
             'location_description' => $request->location_description,
-            'establishment_id' => $request->establishment_id,
+            'establishment_id' => $establishment->id,
         ]);
 
         return response()->json([

@@ -5,6 +5,9 @@ namespace ToiletBook;
 use Illuminate\Database\Eloquent\Model;
 
 class Establishment extends Model {
+
+    protected $fillable = ['name'];
+
     public function area()
     {
         return $this->belongsTo(Area::class);
