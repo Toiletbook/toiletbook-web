@@ -39,7 +39,16 @@ class WashroomController extends Controller
      */
     public function store(Request $request)
     {
-        return "store washroom";
+        $washroom = Washroom::create([
+            'name' => $request->name,
+            'location_description' => $request->location_description,
+            'establishment_id' => $request->establishment_id,
+        ]);
+
+        return response()->json([
+            'message' => 'washroom created',
+            'data' => $washroom
+        ]);
     }
 
     /**
