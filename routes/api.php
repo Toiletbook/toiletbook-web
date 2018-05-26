@@ -28,3 +28,4 @@ Route::get('/areas/{id}', 'AreaController@show');
 
 Route::get('/establishments', 'EstablishmentController@index');
 Route::get('/establishments/{id}', 'EstablishmentController@show');
+Route::get('/visitors','visitorController@index');
