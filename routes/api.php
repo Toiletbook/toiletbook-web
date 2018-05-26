@@ -20,12 +20,16 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('/washrooms', 'WashroomController@index');
 Route::get('/washrooms/{id}', 'WashroomController@show');
 Route::post('/washrooms', 'WashroomController@store');
+
 Route::put('/washrooms/{id}', 'WashroomController@update');
 Route::delete('/washrooms/{id}', 'WashroomController@destroy');
+
+Route::post('/washrooms/{id}/visit', 'WashroomController@visit');
 
 Route::get('/areas', 'AreaController@index');
 Route::get('/areas/{id}', 'AreaController@show');
 
 Route::get('/establishments', 'EstablishmentController@index');
 Route::get('/establishments/{id}', 'EstablishmentController@show');
-Route::get('/visitors','VisitorController@index');
+
+// Route::get('/visitors','VisitorController@index'); -- we don't use this
