@@ -14,7 +14,11 @@ class EstablishmentController extends Controller
      */
     public function index()
     {
-        //
+        $establishments = Establishment::all()->toArray();
+        return response()->json([
+            'message' => 'establishment list',
+            'data' => $establishments
+        ]);
     }
 
     /**
