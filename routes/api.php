@@ -17,4 +17,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/washrooms', 'WashroomController@show');
+Route::get('/washrooms', 'WashroomController@index');
+Route::get('/washrooms/{id}', 'WashroomController@show');
+Route::post('/washrooms', 'WashroomController@store');
+Route::put('/washrooms/{id}', 'WashroomController@update');
+Route::delete('/washrooms/{id}', 'WashroomController@destroy');

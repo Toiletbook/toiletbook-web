@@ -14,7 +14,7 @@ class WashroomController extends Controller
      */
     public function index()
     {
-        //
+        return "washrooms";
     }
 
     /**
@@ -35,7 +35,7 @@ class WashroomController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return "store washroom";
     }
 
     /**
@@ -46,7 +46,7 @@ class WashroomController extends Controller
      */
     public function show(Washroom $washroom)
     {
-        return "washrooms";
+        return "washroom " . $washroom;
         //
     }
 
@@ -70,7 +70,7 @@ class WashroomController extends Controller
      */
     public function update(Request $request, Washroom $washroom)
     {
-        //
+        return "update washroom";
     }
 
     /**
@@ -81,6 +81,6 @@ class WashroomController extends Controller
      */
     public function destroy(Washroom $washroom)
     {
-        //
+        return "delete washroom" . $washroom;
     }
 }
