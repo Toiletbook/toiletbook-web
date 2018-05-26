@@ -14,7 +14,11 @@ class WashroomController extends Controller
      */
     public function index()
     {
-        return "washrooms";
+        $washrooms = Washroom::all()->toArray();
+        return response()->json([
+            'message' => 'washroom list',
+            'data' => $washrooms
+        ]);
     }
 
     /**
