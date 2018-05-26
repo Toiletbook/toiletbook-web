@@ -31,6 +31,8 @@ class Washroom extends Model
             return floor($this->washroomAttributes->sum('average_rating') / $this->washroomAttributes->count() * 2) / 2;
         } catch (\DivisionByZeroError $e) {
             return 0;
+        } catch(\ErrorException $e) {
+            return 0;
         }
     }
 }
