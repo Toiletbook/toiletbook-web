@@ -14,7 +14,11 @@ class AreaController extends Controller
      */
     public function index()
     {
-        //
+        $areas = Area::all()->toArray();
+        return response()->json([
+            'message' => 'area list',
+            'data' => $areas
+        ]);
     }
 
     /**
