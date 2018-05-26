@@ -22,3 +22,6 @@ Route::get('/washrooms/{id}', 'WashroomController@show');
 Route::post('/washrooms', 'WashroomController@store');
 Route::put('/washrooms/{id}', 'WashroomController@update');
 Route::delete('/washrooms/{id}', 'WashroomController@destroy');
+
+Route::get('/areas', 'AreaController@index');
+Route::get('/areas/{id}', 'AreaController@show');
