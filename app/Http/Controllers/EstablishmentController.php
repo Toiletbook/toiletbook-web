@@ -4,6 +4,7 @@ namespace ToiletBook\Http\Controllers;
 
 use ToiletBook\Establishment;
 use Illuminate\Http\Request;
+use ToiletBook\Washroom;
 
 class EstablishmentController extends Controller
 {
@@ -45,9 +46,14 @@ class EstablishmentController extends Controller
      * @param  \ToiletBook\Establishment  $establishment
      * @return \Illuminate\Http\Response
      */
-    public function show(Establishment $establishment)
+    public function show($establishmentId)
     {
-        //
+        return response()->json(Establishment::findOrFail($establishmentId));
+    }
+
+    public function washrooms($establishmentId)
+    {
+        return Washroom::where('establishment_id', $establishmentId)->get();
     }
 
     /**
