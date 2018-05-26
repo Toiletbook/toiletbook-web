@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace ToiletBook\Http\Controllers;
 
-use App\Washroom;
+use ToiletBook\Washroom;
 use Illuminate\Http\Request;
 
 class WashroomController extends Controller
@@ -41,7 +41,7 @@ class WashroomController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Washroom  $washroom
+     * @param  \ToiletBook\Washroom  $washroom
      * @return \Illuminate\Http\Response
      */
     public function show(Washroom $washroom)
@@ -53,7 +53,7 @@ class WashroomController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Washroom  $washroom
+     * @param  \ToiletBook\Washroom  $washroom
      * @return \Illuminate\Http\Response
      */
     public function edit(Washroom $washroom)
@@ -65,7 +65,7 @@ class WashroomController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Washroom  $washroom
+     * @param  \ToiletBook\Washroom  $washroom
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Washroom $washroom)
@@ -76,7 +76,7 @@ class WashroomController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Washroom  $washroom
+     * @param  \ToiletBook\Washroom  $washroom
      * @return \Illuminate\Http\Response
      */
     public function destroy(Washroom $washroom)

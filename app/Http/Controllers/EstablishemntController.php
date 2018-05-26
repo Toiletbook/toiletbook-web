@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace ToiletBook\Http\Controllers;
 
-use App\Establishment;
+use ToiletBook\Establishment;
 use Illuminate\Http\Request;
 
 class EstablishemntController extends Controller
@@ -41,7 +41,7 @@ class EstablishemntController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Establishment  $establishment
+     * @param  \ToiletBook\Establishment  $establishment
      * @return \Illuminate\Http\Response
      */
     public function show(Establishment $establishment)
@@ -52,7 +52,7 @@ class EstablishemntController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Establishment  $establishment
+     * @param  \ToiletBook\Establishment  $establishment
      * @return \Illuminate\Http\Response
      */
     public function edit(Establishment $establishment)
@@ -64,7 +64,7 @@ class EstablishemntController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Establishment  $establishment
+     * @param  \ToiletBook\Establishment  $establishment
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Establishment $establishment)
@@ -75,7 +75,7 @@ class EstablishemntController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Establishment  $establishment
+     * @param  \ToiletBook\Establishment  $establishment
      * @return \Illuminate\Http\Response
      */
     public function destroy(Establishment $establishment)
