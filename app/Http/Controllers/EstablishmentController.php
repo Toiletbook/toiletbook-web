@@ -53,7 +53,7 @@ class EstablishmentController extends Controller
 
     public function washrooms($establishmentId)
     {
-        return Washroom::where('establishment_id', $establishmentId)->get();
+        return Washroom::with(['establishment.area', 'washroomAttributes'])->where('establishment_id', $establishmentId)->get();
     }
 
     /**
