@@ -16,10 +16,9 @@ class CreateAttributesTable extends Migration
         Schema::create('attributes', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('description');
+            //$table->string('description');
             $table->integer('washroom_id', false, true);
-            $table->foreign('washroom_id')
-                ->references('id')->on('washrooms');
+            $table->foreign('washroom_id')->references('id')->on('washrooms');
             $table->timestamps();
         });
     }
