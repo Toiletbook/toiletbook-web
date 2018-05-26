@@ -23,27 +23,28 @@ class CreateWashroomsTable extends Migration
             $table->string('longitude',20)->nullable();
             $table->boolean('is_sponsored', false, true)->default(false);
 
-            $table->boolean('gender_is_female_only')->default(false);
-            $table->boolean('gender_is_male_only')->default(false);
-            $table->boolean('gender_is_unisex')->default(false);
-            $table->boolean('gender_has_both')->default(false);
+            $table->boolean('gender_is_female_only')->default(false)->nullable();
+            $table->boolean('gender_is_male_only')->default(false)->nullable();
+            $table->boolean('gender_is_unisex')->default(false)->nullable();
+            $table->boolean('gender_has_both')->default(false)->nullable();
 
-            $table->boolean('is_free')->default(true);
-            $table->boolean('need_membership')->default(false);
+            $table->boolean('is_free')->default(true)->nullable();
+            $table->decimal('entry_amount')->default(0);
+            $table->boolean('need_membership')->default(false)->nullable();
 
-            $table->boolean('has_water')->default(false);
-            $table->boolean('has_soap')->default(false);
-            $table->boolean('has_shower')->default(false);
+            $table->boolean('has_water')->default(false)->nullable();
+            $table->boolean('has_soap')->default(false)->nullable();
+            $table->boolean('has_shower')->default(false)->nullable();
 
-            $table->boolean('has_wifi')->default(false);
-            $table->boolean('has_tv')->default(false);
+            $table->boolean('has_wifi')->default(false)->nullable();
+            $table->boolean('has_tv')->default(false)->nullable();
 
-            $table->boolean('has_tissues')->default(false);
-            $table->boolean('has_bidet')->default(false);
-            $table->boolean('is_pwd_friendly')->default(false);
+            $table->boolean('has_tissues')->default(false)->nullable();
+            $table->boolean('has_bidet')->default(false)->nullable();
+            $table->boolean('is_pwd_friendly')->default(false)->nullable();
 
-            $table->boolean('has_vending_machine')->default(false);
-            $table->boolean('has_diaper_station')->default(false);
+            $table->boolean('has_vending_machine')->default(false)->nullable();
+            $table->boolean('has_diaper_station')->default(false)->nullable();
 
 
             $table->integer('establishment_id', false, true);
