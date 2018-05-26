@@ -55,7 +55,7 @@ class WashroomController extends Controller
 
         if($validator->fails()) {
             return response()->json([
-                'message' => 'parameter error'
+                'message' => $validator->errors()
             ], 401);
         }
 
