@@ -17,6 +17,8 @@ class CreateVisitorsTable extends Migration
             $table->increments('id');
             $table->timestamps();
             $table->string('name',20)->nullable();
+            $table->integer('washroom_id', false, true);
+            $table->foreign('washroom_id')->references('id')->on('washrooms');
             $table->string('gender',20)->nullable();
         });
     }

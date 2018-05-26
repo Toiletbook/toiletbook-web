@@ -8,6 +8,8 @@ class Establishment extends Model {
 
     protected $fillable = ['name'];
 
+    protected $hidden = ['created_at', 'updated_at', 'area_id'];
+
     public function area()
     {
         return $this->belongsTo(Area::class);
@@ -16,10 +18,5 @@ class Establishment extends Model {
     public function washrooms()
     {
         return $this->hasMany(Washroom::class);
-    }
-
-    public function attriibutes()
-    {
-        return $this->hasMany(Attribute::class);
     }
 }
