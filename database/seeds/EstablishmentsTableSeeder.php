@@ -20,6 +20,5 @@ class EstablishmentsTableSeeder extends Seeder
             'name' => 'RCBC',
             'area_id' => '2',
         ]);
-
     }
 }
