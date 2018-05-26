@@ -39,6 +39,15 @@ class WashroomController extends Controller
      */
     public function store(Request $request)
     {
+        $validator = \Validator::make($request->all(), [
+            'name' => 'required|max:255',
+            'location_description' => 'required'
+        ]);
+
+        if($validator->fails()) {
+            return \App::abort(500);
+        }
+
         $washroom = Washroom::create([
             'name' => $request->name,
             'location_description' => $request->location_description,
