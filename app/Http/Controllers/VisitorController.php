@@ -5,7 +5,7 @@ namespace ToiletBook\Http\Controllers;
 use ToiletBook\Visitor;
 use Illuminate\Http\Request;
 
-class visitorController extends Controller
+class VisitorController extends Controller
 {
     /**
      * Display a listing of the resource.
