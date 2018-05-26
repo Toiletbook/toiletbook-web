@@ -4,6 +4,14 @@ namespace ToiletBook;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * ToiletBook\Attribute
+ *
+ * @property-read mixed $average_rating
+ * @property-read \Illuminate\Database\Eloquent\Collection|\ToiletBook\Rating[] $ratings
+ * @property-read \ToiletBook\Washroom $washroom
+ * @mixin \Eloquent
+ */
 class Attribute extends Model
 {
     protected $appends = ['average_rating'];

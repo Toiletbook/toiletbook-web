@@ -2,6 +2,7 @@
 
 namespace ToiletBook\Http\Controllers;
 
+use ToiletBook\Visitor;
 use ToiletBook\Washroom;
 use Illuminate\Http\Request;
 use ToiletBook\Establishment;
@@ -121,5 +122,18 @@ class WashroomController extends Controller
     public function destroy(Washroom $washroom)
     {
         return "delete washroom" . $washroom;
+    }
+
+    public function visit(int $washroomId)
+    {
+        $washroom = Washroom::findOrFail($washroomId);
+
+        Visitor::create([
+            'washroom_id' => $washroom->id
+        ]);
+
+        return response()->json([
+            'message' => 'washroom ' . $washroom->id . ' updated'
+        ]);
     }
 }
