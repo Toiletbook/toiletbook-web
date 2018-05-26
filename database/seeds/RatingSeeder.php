@@ -14,3 +14,4 @@ class RatingSeeder extends Seeder
         //
     }
 }
+
