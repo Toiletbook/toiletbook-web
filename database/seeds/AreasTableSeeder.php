@@ -12,7 +12,7 @@ class AreasTableSeeder extends Seeder
     public function run()
     {
         DB::table('areas')->insert(['name' => 'Makati']);
-        DB::table('areas')->insert(['name' => 'BGC']);
-        DB::table('areas')->insert(['name' => 'SM Megamall']);
+        DB::table('areas')->insert(['name' => 'Megamall']);
+        DB::table('areas')->insert(['name' => 'EDSA']);
     }
 }

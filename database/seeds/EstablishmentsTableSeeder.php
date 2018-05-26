@@ -12,12 +12,17 @@ class EstablishmentsTableSeeder extends Seeder
     public function run()
     {
         DB::table('establishments')->insert([
-            'name' => 'GreenBelt',
+            'name' => 'ASPACE Makati',
             'area_id' => '1',
         ]);
 
         DB::table('establishments')->insert([
-            'name' => 'RCBC',
+            'name' => 'Jollibee Megamall Building A',
+            'area_id' => '2',
+        ]);
+
+        DB::table('establishments')->insert([
+            'name' => 'Jollibee Megamall Building B',
             'area_id' => '2',
         ]);
     }
