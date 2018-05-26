@@ -13,5 +13,6 @@ class AreasTableSeeder extends Seeder
     {
         DB::table('areas')->insert(['name' => 'Makati']);
         DB::table('areas')->insert(['name' => 'BGC']);
+        DB::table('areas')->insert(['name' => 'SM Megamall']);
     }
 }
