@@ -15,10 +15,7 @@ class VisitorController extends Controller
     public function index()
     {
         $visitors = Visitor::all()->toArray();
-        return response()->json([
-            'message' => 'visitor list',
-            'data' => $visitors
-        ]);
+        return response()->json($visitors);
     }
 
     /**
