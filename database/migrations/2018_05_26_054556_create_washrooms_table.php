@@ -15,6 +15,8 @@ class CreateWashroomsTable extends Migration
     {
         Schema::create('washrooms', function (Blueprint $table) {
             $table->increments('id');
+            $table->foreign('establishment_id')
+                ->references('id')->on('establishments');
             $table->timestamps();
         });
     }
