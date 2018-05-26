@@ -15,6 +15,11 @@ class CreateEstablishmentsTable extends Migration
     {
         Schema::create('establishments', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+
+            $table->integer('area_id', false, true)->nullable();
+            $table->foreign('area_id')
+                  ->references('id')->on('areas');
             $table->timestamps();
         });
     }

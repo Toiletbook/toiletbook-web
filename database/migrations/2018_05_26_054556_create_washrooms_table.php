@@ -15,6 +15,12 @@ class CreateWashroomsTable extends Migration
     {
         Schema::create('washrooms', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+            $table->string('location_description');
+            $table->decimal('lat',5,20)->nullable();
+            $table->decimal('long',5,20)->nullable();
+
+            $table->integer('establishment_id', false, true);
             $table->foreign('establishment_id')
                 ->references('id')->on('establishments');
             $table->timestamps();
