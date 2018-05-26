@@ -66,10 +66,13 @@ class WashroomController extends Controller
      * @param  \ToiletBook\Washroom  $washroom
      * @return \Illuminate\Http\Response
      */
-    public function show(Washroom $washroom)
+    public function show(int $washroomId)
     {
-        return "washroom " . $washroom;
-        //
+        $washroom = Washroom::findOrFail($washroomId);
+        return response()->json([
+            'message' => 'washroom '. $washroom->id,
+            'data' => $washroom
+        ]);
     }
 
     /**
