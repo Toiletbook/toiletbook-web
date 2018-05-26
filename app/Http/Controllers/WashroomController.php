@@ -2,6 +2,7 @@
 
 namespace ToiletBook\Http\Controllers;
 
+use ToiletBook\Visitor;
 use ToiletBook\Washroom;
 use Illuminate\Http\Request;
 use ToiletBook\Establishment;
@@ -22,10 +23,7 @@ class WashroomController extends Controller
             return $a['general_rating'] < $b['general_rating'];
         });
 
-        return response()->json([
-            'message' => 'washroom list',
-            'data' => $washrooms
-        ]);
+        return response()->json($washrooms);
     }
 
     /**
@@ -71,10 +69,7 @@ class WashroomController extends Controller
             'establishment_id' => $establishment->id,
         ]);
 
-        return response()->json([
-            'message' => 'washroom created',
-            'data' => $washroom
-        ]);
+        return response()->json($washroom);
     }
 
     /**
@@ -86,10 +81,7 @@ class WashroomController extends Controller
     public function show(int $washroomId)
     {
         $washroom = Washroom::findOrFail($washroomId);
-        return response()->json([
-            'message' => 'washroom '. $washroom->id . ' infomation',
-            'data' => $washroom
-        ]);
+        return response()->json($washroom);
     }
 
     /**
@@ -118,10 +110,7 @@ class WashroomController extends Controller
         $washroom->location_description = $request->location_description;
         $washroom->save();
 
-        return response()->json([
-            'message' => 'washroom '. $washroom->id . ' updated',
-            'data' => $washroom
-        ]);
+        return response()->json($washroom);
     }
 
     /**
@@ -133,5 +122,18 @@ class WashroomController extends Controller
     public function destroy(Washroom $washroom)
     {
         return "delete washroom" . $washroom;
+    }
+
+    public function visit(int $washroomId)
+    {
+        $washroom = Washroom::findOrFail($washroomId);
+
+        Visitor::create([
+            'washroom_id' => $washroom->id
+        ]);
+
+        return response()->json([
+            'message' => 'washroom ' . $washroom->id . ' updated'
+        ]);
     }
 }

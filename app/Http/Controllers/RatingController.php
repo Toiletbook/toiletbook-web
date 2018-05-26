@@ -52,10 +52,7 @@ class RatingController extends Controller
             'value' => $request->value,
         ]);
 
-        return response()->json([
-            'message' => 'washroom ' . $washroomId . ' rated',
-            'data' => $rating
-        ]);
+        return response()->json($rating);
     }
 
     /**

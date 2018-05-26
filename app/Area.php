@@ -4,6 +4,12 @@ namespace ToiletBook;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * ToiletBook\Area
+ *
+ * @property-read \Illuminate\Database\Eloquent\Collection|\ToiletBook\Establishment[] $establishments
+ * @mixin \Eloquent
+ */
 class Area extends Model
 {
     protected $fillable = ['name'];
