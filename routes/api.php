@@ -31,6 +31,7 @@ Route::get('/areas/{id}', 'AreaController@show');
 
 Route::get('/establishments', 'EstablishmentController@index');
 Route::get('/establishments/{id}', 'EstablishmentController@show');
+Route::get('/establishments/{id}/washrooms', 'EstablishmentController@washrooms');
 
 Route::post('/rating/{washroomId}', 'RatingController@store');
 
