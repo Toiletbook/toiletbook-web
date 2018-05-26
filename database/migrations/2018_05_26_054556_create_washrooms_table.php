@@ -17,33 +17,33 @@ class CreateWashroomsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('location_description');
-            $table->string('open_hours');
+            $table->string('open_hours')->nullable();
 
             $table->string('latitude',20)->nullable();
             $table->string('longitude',20)->nullable();
-            $table->boolean('is_sponsored', false, true);
+            $table->boolean('is_sponsored', false, true)->default(false);
 
-            $table->boolean('gender_is_female_only');
-            $table->boolean('gender_is_male_only');
-            $table->boolean('gender_is_unisex');
-            $table->boolean('gender_has_both');
+            $table->boolean('gender_is_female_only')->default(false);
+            $table->boolean('gender_is_male_only')->default(false);
+            $table->boolean('gender_is_unisex')->default(false);
+            $table->boolean('gender_has_both')->default(false);
 
-            $table->boolean('is_free');
-            $table->boolean('need_membership');
+            $table->boolean('is_free')->default(true);
+            $table->boolean('need_membership')->nullable();
 
-            $table->boolean('has_water');
-            $table->boolean('has_soap');
-            $table->boolean('has_shower');
+            $table->boolean('has_water')->nullable();
+            $table->boolean('has_soap')->nullable();
+            $table->boolean('has_shower')->nullable();
 
-            $table->boolean('has_wifi');
-            $table->boolean('has_tv');
+            $table->boolean('has_wifi')->nullable();
+            $table->boolean('has_tv')->nullable();
 
-            $table->boolean('has_tissues');
-            $table->boolean('has_bidet');
-            $table->boolean('is_pwd_friendly');
+            $table->boolean('has_tissues')->nullable();
+            $table->boolean('has_bidet')->nullable();
+            $table->boolean('is_pwd_friendly')->nullable();
 
-            $table->boolean('has_vending_machine');
-            $table->boolean('has_diaper_station');
+            $table->boolean('has_vending_machine')->nullable();
+            $table->boolean('has_diaper_station')->nullable();
 
 
             $table->integer('establishment_id', false, true);
