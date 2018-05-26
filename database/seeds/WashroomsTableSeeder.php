@@ -10,6 +10,7 @@ class WashroomsTableSeeder extends Seeder {
      */
     public function run()
     {
+        
         DB::table('washrooms')->insert([
             'establishment_id'      => 1,
             'name'                  => 'Men\'s Washroom @ 5F',
