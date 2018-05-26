@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder {
         $this->call(WashroomsTableSeeder::class);
         $this->call(AttributeSeeder::class);
         $this->call(RatingSeeder::class);
+        $this->call(VisitorsTableSeeder::class);
         DB::statement('SET FOREIGN_KEY_CHECKS=1;');
     }
 }
