@@ -32,4 +32,6 @@ Route::get('/areas/{id}', 'AreaController@show');
 Route::get('/establishments', 'EstablishmentController@index');
 Route::get('/establishments/{id}', 'EstablishmentController@show');
 
+Route::post('/rating/{washroomId}', 'RatingController@store');
+
 // Route::get('/visitors','VisitorController@index'); -- we don't use this

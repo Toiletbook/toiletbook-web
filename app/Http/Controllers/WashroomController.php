@@ -4,6 +4,8 @@ namespace ToiletBook\Http\Controllers;
 
 use ToiletBook\Washroom;
 use Illuminate\Http\Request;
+use ToiletBook\Establishment;
+use ToiletBook\Area;
 
 class WashroomController extends Controller
 {
@@ -39,10 +41,29 @@ class WashroomController extends Controller
      */
     public function store(Request $request)
     {
+        $validator = \Validator::make($request->all(), [
+            'name' => 'required|max:255',
+            'area_name' => 'required',
+            'establishment_name' => 'required',
+            'location_description' => 'required'
+        ]);
+
+        if($validator->fails()) {
+            return response()->json([
+                'message' => 'parameter error'
+            ], 401);
+        }
+
+        $area = Area::firstOrCreate(['name' => $request->area_name]);
+        $establishment = Establishment::firstOrCreate([
+            'name' => $request->establishment_name,
+            'area_id' => $area->id
+        ]);
+
         $washroom = Washroom::create([
             'name' => $request->name,
             'location_description' => $request->location_description,
-            'establishment_id' => $request->establishment_id,
+            'establishment_id' => $establishment->id,
         ]);
 
         return response()->json([
@@ -57,10 +78,13 @@ class WashroomController extends Controller
      * @param  \ToiletBook\Washroom  $washroom
      * @return \Illuminate\Http\Response
      */
-    public function show(Washroom $washroom)
+    public function show(int $washroomId)
     {
-        return "washroom " . $washroom;
-        //
+        $washroom = Washroom::findOrFail($washroomId);
+        return response()->json([
+            'message' => 'washroom '. $washroom->id . ' infomation',
+            'data' => $washroom
+        ]);
     }
 
     /**
@@ -81,9 +105,18 @@ class WashroomController extends Controller
      * @param  \ToiletBook\Washroom  $washroom
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Washroom $washroom)
+    public function update(Request $request, int $washroomId)
     {
-        return "update washroom";
+        $washroom = Washroom::findOrFail($washroomId);
+
+        $washroom->name = $request->name;
+        $washroom->location_description = $request->location_description;
+        $washroom->save();
+
+        return response()->json([
+            'message' => 'washroom '. $washroom->id . ' updated',
+            'data' => $washroom
+        ]);
     }
 
     /**

@@ -10,7 +10,7 @@ class WashroomsTableSeeder extends Seeder {
      */
     public function run()
     {
-        
+
         DB::table('washrooms')->insert([
             'establishment_id'      => 1,
             'name'                  => 'Men\'s Washroom @ 5F',
@@ -62,14 +62,93 @@ class WashroomsTableSeeder extends Seeder {
             'has_vending_machine'   => false,
             'has_diaper_station'    => false,
         ]);
+        
+        DB::table('washrooms')->insert([
+            'establishment_id'      => 2,
+            'name'                  => 'Men\'s Washroom @ 3F',
+            'location_description'  => 'Near the ATM Center',
+            'open_hours'            => '9:00am to 10:00pm, Sunday-Saturday',
+            'latitude'              => '14.5853246',
+            'longitude'             => '121.0572364',
+            'is_sponsored'          => false,
+            'gender_is_female_only' => false,
+            'gender_is_male_only'   => true,
+            'gender_is_unisex'      => false,
+            'gender_has_both'       => false,
+            'is_free'               => true,
+            'need_membership'       => false,
+            'has_water'             => true,
+            'has_soap'              => true,
+            'has_shower'            => true,
+            'has_wifi'              => false,
+            'has_tv'                => false,
+            'has_tissues'           => true,
+            'has_bidet'             => true,
+            'is_pwd_friendly'       => true,
+            'has_vending_machine'   => true,
+            'has_diaper_station'    => true,
+        ]);
 
         DB::table('washrooms')->insert([
             'establishment_id'      => 2,
-            'name'                  => 'Women\'s Washroom @ 5F',
+            'name'                  => 'Women\'s Washroom @ 3F',
+            'location_description'  => 'Near the ATM Center',
+            'open_hours'            => '9:00am to 10:00pm, Sunday-Saturday',
+            'latitude'              => '14.5853246',
+            'longitude'             => '121.0572364',
+            'is_sponsored'          => false,
+            'gender_is_female_only' => true,
+            'gender_is_male_only'   => false,
+            'gender_is_unisex'      => false,
+            'gender_has_both'       => false,
+            'is_free'               => true,
+            'need_membership'       => false,
+            'has_water'             => true,
+            'has_soap'              => true,
+            'has_shower'            => true,
+            'has_wifi'              => false,
+            'has_tv'                => false,
+            'has_tissues'           => true,
+            'has_bidet'             => true,
+            'is_pwd_friendly'       => true,
+            'has_vending_machine'   => true,
+            'has_diaper_station'    => true,
+        ]);
+
+
+        DB::table('washrooms')->insert([
+            'establishment_id'      => 8,
+            'name'                  => 'Men\'s Washroom @ Lobby Area',
+            'location_description'  => 'Near the Escalator',
+            'open_hours'            => '24 Hours, Sunday to Saturday',
+            'latitude'              => '14.5607705',
+            'longitude'             => '121.0169363',
+            'is_sponsored'          => false,
+            'gender_is_female_only' => false,
+            'gender_is_male_only'   => true,
+            'gender_is_unisex'      => false,
+            'gender_has_both'       => false,
+            'is_free'               => true,
+            'need_membership'       => false,
+            'has_water'             => true,
+            'has_soap'              => false,
+            'has_shower'            => false,
+            'has_wifi'              => false,
+            'has_tv'                => false,
+            'has_tissues'           => true,
+            'has_bidet'             => true,
+            'is_pwd_friendly'       => true,
+            'has_vending_machine'   => true,
+            'has_diaper_station'    => true,
+        ]);
+
+        DB::table('washrooms')->insert([
+            'establishment_id'      => 8,
+            'name'                  => 'Women\'s Washroom @ Lobby Area',
             'location_description'  => 'Near the ATM Center',
             'open_hours'            => '9:00am to 10:00pm, Sunday to Saturday',
-            'latitude'              => '14.554036',
-            'longitude'             => '',
+            'latitude'              => '14.5853246',
+            'longitude'             => '121.0572364',
             'is_sponsored'          => false,
             'gender_is_female_only' => true,
             'gender_is_male_only'   => false,
@@ -79,15 +158,14 @@ class WashroomsTableSeeder extends Seeder {
             'need_membership'       => false,
             'has_water'             => true,
             'has_soap'              => true,
-            'has_shower'            => false,
+            'has_shower'            => true,
             'has_wifi'              => false,
             'has_tv'                => false,
             'has_tissues'           => true,
             'has_bidet'             => true,
-            'is_pwd_friendly'       => false,
-            'has_vending_machine'   => false,
-            'has_diaper_station'    => false,
+            'is_pwd_friendly'       => true,
+            'has_vending_machine'   => true,
+            'has_diaper_station'    => true,
         ]);
-
     }
 }
