@@ -8,7 +8,7 @@ class Attribute extends Model
 {
     protected $appends = ['average_rating'];
 
-    protected $hidden = ['ratings', 'created_at', 'updated_at', 'washroom_id'];
+    protected $hidden = ['ratings', 'created_at', 'updated_at', 'washroom_id', 'id'];
 
     public function washroom() {
         return $this->belongsTo(Washroom::class);

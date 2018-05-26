@@ -10,6 +10,12 @@ class Washroom extends Model
 
     protected $appends = ['general_rating'];
 
+    protected $casts = [
+        'entry_amount' => 'float',
+        'latitude' => 'double',
+        'longitude' => 'double'
+    ];
+
     public function establishment()
     {
         return $this->belongsTo(Establishment::class);

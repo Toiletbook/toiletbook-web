@@ -17,6 +17,11 @@ class WashroomController extends Controller
     public function index()
     {
         $washrooms = Washroom::with(['establishment.area', 'washroomAttributes'])->get()->toArray();
+
+        usort($washrooms, function($a, $b) {
+            return $a['general_rating'] < $b['general_rating'];
+        });
+
         return response()->json([
             'message' => 'washroom list',
             'data' => $washrooms
