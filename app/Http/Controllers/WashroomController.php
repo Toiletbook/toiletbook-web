@@ -80,7 +80,7 @@ class WashroomController extends Controller
      */
     public function show(int $washroomId)
     {
-        $washroom = Washroom::findOrFail($washroomId);
+        $washroom = Washroom::with(['establishment.area', 'washroomAttributes'])->findOrFail($washroomId);
         return response()->json($washroom);
     }
 
@@ -104,7 +104,7 @@ class WashroomController extends Controller
      */
     public function update(Request $request, int $washroomId)
     {
-        $washroom = Washroom::findOrFail($washroomId);
+        $washroom = Washroom::with(['establishment.area', 'washroomAttributes'])->findOrFail($washroomId);
 
         $washroom->name = $request->name;
         $washroom->location_description = $request->location_description;

@@ -1,8 +1,8 @@
 <?php
+
 use Illuminate\Database\Seeder;
 
-class EstablishmentsTableSeeder extends Seeder
-{
+class EstablishmentsTableSeeder extends Seeder {
     /**
      * Run the database seeds.
      *
@@ -11,69 +11,75 @@ class EstablishmentsTableSeeder extends Seeder
     public function run()
     {
         DB::table('establishments')->insert([
-            'name' => 'ASPACE Makati',
+            'name'    => 'ASPACE Makati',
             'area_id' => '1',
-            'id'=> '1',
+            'id'      => '1',
         ]);
 
         DB::table('establishments')->insert([
-            'name' => 'Jollibee Megamall Building A',
+            'name'    => 'Megamall Building A',
             'area_id' => '2',
-            'id'=> '2',
+            'id'      => '2',
         ]);
 
         DB::table('establishments')->insert([
-            'name' => 'Jollibee Megamall Building B',
+            'name'    => 'Megamall Building B',
             'area_id' => '2',
-            'id'=> '3',
+            'id'      => '3',
         ]);
 
         DB::table('establishments')->insert([
-            'name' => 'Makati Medical Center',            
+            'name'    => 'Makati Medical Center',
             'area_id' => '1',
-            'id'=> '4',
+            'id'      => '4',
         ]);
-        
+
 
         DB::table('establishments')->insert([
-            'name' => 'MetroWalk',
+            'name'    => 'MetroWalk',
             'area_id' => '2',
-            'id'=> '5',
+            'id'      => '5',
         ]);
 
-        
+
         DB::table('establishments')->insert([
-            'name' => 'Robinsons Galleria Ortigas',
+            'name'    => 'Robinsons Galleria Ortigas',
             'area_id' => '2',
-            'id'=> '6',
+            'id'      => '6',
         ]);
 
-        
+
         DB::table('establishments')->insert([
-            'name' => 'Farmers Plaza Building',
+            'name'    => 'Farmers Plaza Building',
             'area_id' => '3',
-            'id' => '7',
+            'id'      => '7',
         ]);
 
-        
+
         DB::table('establishments')->insert([
-            'name' => 'RCBC Plaza Tower 2',
+            'name'    => 'RCBC Plaza Tower 2',
             'area_id' => '1',
-            'id' => '8',
+            'id'      => '8',
         ]);
 
-        
+
         DB::table('establishments')->insert([
-            'name' => 'SM City Fairview Annex',
+            'name'    => 'SM City Fairview Annex',
             'area_id' => '3',
-            'id' => '9',
+            'id'      => '9',
         ]);
 
-        
+
         DB::table('establishments')->insert([
-            'name' => 'Trinoma Mall',
+            'name'    => 'Trinoma Mall',
             'area_id' => '3',
-            'id' => '10',
+            'id'      => '10',
+        ]);
+
+        DB::table('establishments')->insert([
+            'name'    => 'Trinoma Mall',
+            'area_id' => '3',
+            'id'      => '11',
         ]);
 
     }
