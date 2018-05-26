@@ -25,7 +25,7 @@ class Washroom extends Model {
         'longitude'    => 'double'
     ];
 
-    protected $hidden = ['visitors'];
+    protected $hidden = ['visitors', 'created_at', 'updated_at'];
 
     public function establishment()
     {
