@@ -29,21 +29,21 @@ class CreateWashroomsTable extends Migration
             $table->boolean('gender_has_both')->default(false);
 
             $table->boolean('is_free')->default(true);
-            $table->boolean('need_membership')->nullable();
+            $table->boolean('need_membership')->default(false);
 
-            $table->boolean('has_water')->nullable();
-            $table->boolean('has_soap')->nullable();
-            $table->boolean('has_shower')->nullable();
+            $table->boolean('has_water')->default(false);
+            $table->boolean('has_soap')->default(false);
+            $table->boolean('has_shower')->default(false);
 
-            $table->boolean('has_wifi')->nullable();
-            $table->boolean('has_tv')->nullable();
+            $table->boolean('has_wifi')->default(false);
+            $table->boolean('has_tv')->default(false);
 
-            $table->boolean('has_tissues')->nullable();
-            $table->boolean('has_bidet')->nullable();
-            $table->boolean('is_pwd_friendly')->nullable();
+            $table->boolean('has_tissues')->default(false);
+            $table->boolean('has_bidet')->default(false);
+            $table->boolean('is_pwd_friendly')->default(false);
 
-            $table->boolean('has_vending_machine')->nullable();
-            $table->boolean('has_diaper_station')->nullable();
+            $table->boolean('has_vending_machine')->default(false);
+            $table->boolean('has_diaper_station')->default(false);
 
 
             $table->integer('establishment_id', false, true);
