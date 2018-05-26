@@ -19,9 +19,4 @@ class Establishment extends Model {
     {
         return $this->hasMany(Washroom::class);
     }
-
-    public function attriibutes()
-    {
-        return $this->hasMany(Attribute::class);
-    }
 }
