@@ -15,6 +15,7 @@ class CreateRatingsTable extends Migration
     {
         Schema::create('ratings', function (Blueprint $table) {
             $table->increments('id');
+            $table->enum('value', [1,2,3,4,5]);
             $table->integer('attribute_id', false, true);
             $table->foreign('attribute_id')
                 ->references('id')->on('attributes');
