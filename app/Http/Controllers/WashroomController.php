@@ -70,7 +70,7 @@ class WashroomController extends Controller
     {
         $washroom = Washroom::findOrFail($washroomId);
         return response()->json([
-            'message' => 'washroom '. $washroom->id,
+            'message' => 'washroom '. $washroom->id . ' infomation',
             'data' => $washroom
         ]);
     }
@@ -93,9 +93,18 @@ class WashroomController extends Controller
      * @param  \ToiletBook\Washroom  $washroom
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Washroom $washroom)
+    public function update(Request $request, int $washroomId)
     {
-        return "update washroom";
+        $washroom = Washroom::findOrFail($washroomId);
+
+        $washroom->name = $request->name;
+        $washroom->location_description = $request->location_description;
+        $washroom->save();
+
+        return response()->json([
+            'message' => 'washroom '. $washroom->id . ' updated',
+            'data' => $washroom
+        ]);
     }
 
     /**
