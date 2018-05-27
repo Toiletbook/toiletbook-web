@@ -31,19 +31,19 @@
 
 </head>
 <body>
-<div id="ss">
-    <img src="/img/ss/1.jpg"></img>
-    <img src="/img/ss/2.jpg"></img>
-    <img src="/img/ss/3.jpg"></img>
-    <!-- -->
-    <img src="/img/ss/4.jpg"></img>
-    <img src="/img/ss/5.jpg"></img>
-    <img src="/img/ss/6.jpg"></img>
-    <!-- -->
-    <img src="/img/ss/7.jpg"></img>
-    <img src="/img/ss/8.jpg"></img>
-    <img src="/img/ss/9.jpg"></img>
-</div>
+        <div id="ss">
+            <img src="/img/ss/search.jpg"></img>
+            <img src="/img/ss/establishments.jpg"></img>
+            <img src="/img/ss/list.jpg"></img>
+            <!-- -->
+            <img src="/img/ss/info.jpg"></img>
+            <img src="/img/ss/foot-traffic.jpg"></img>
+            <img src="/img/ss/feedback.jpg"></img>
+            <!-- -->
+            <img src="/img/ss/register.jpg"></img>
+            <!--<img src="img/ss/.jpg"></img>
+            <img src="img/ss/9.jpg"></img>-->            
+        </div>
 <div id="background">
     <img></img>
 </div>
