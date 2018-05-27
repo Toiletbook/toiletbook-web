@@ -46,7 +46,8 @@ body {
 #dl {
     font-size: 30pt;
     font-family: Pacifico, cursive;
-    color: #63598A;
+    background-color: #63598A;
+    color: #B297AC;
 }
 
 nav {
