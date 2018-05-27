@@ -77,7 +77,7 @@ class EstablishmentsTableSeeder extends Seeder {
         ]);
 
         DB::table('establishments')->insert([
-            'name'    => 'Trinoma Mall',
+            'name'    => 'Washroom Land',
             'area_id' => '3',
             'id'      => '11',
         ]);
