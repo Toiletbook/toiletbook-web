@@ -1,7 +1,7 @@
 @font-face {
     font-family: Avenir;
     font-weight: 400;
-    src: url('/fonts/Avenir-Medium.ttf');
+    src: url(../fonts/Avenir-Medium.ttf);
 }
 
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
@@ -30,7 +30,7 @@ body {
 }
 
 #background img {
-    content: url('/img/map-bg.png');
+    content: url(../img/map-bg.png);
 }
 
 #about {
