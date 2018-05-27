@@ -31,9 +31,9 @@ How can this solve an environmental problem?
 The availability of the washrooms’ location could, by extension, prevent people from excreting human waste just anywhere especially on bodies of water. Human waste not disposed based on proper regulation will become part of toxic waste which can harm humans, animals, and plants[5]. Humans or animals often absorb them when they eat fish. ToiletBook can help to reduce the production of toxic waste and help with lightening the workload of recycling causes by different programs, such as the household waste collection program advocated by UKEssays in their publishings[5].
 
 ### References:
-[1]https://visor.ph/viral/i-drove-up-and-down-nlex-to-verify-a-facebook-rant/
-[2]http://manilastandard.net/opinion/columns/hail-to-the-chair-by-victor-avecilla/230484/public-pay-toilets-and-unisex-public-restrooms.html
-[3]http://www.manilatimes.net/where-are-the-toilets/242627/
-[4]https://www.senate.gov.ph/lisdata/2016717278!.pdf
-[5]https://www.nationalgeographic.com/environment/global-warming/toxic-waste/
-[6]https://www.ukessays.com/essays/environmental-sciences/the-environmental-effects-of-human-waste-disposal-environmental-sciences-essay.php
+* [1]https://visor.ph/viral/i-drove-up-and-down-nlex-to-verify-a-facebook-rant/
+* [2]http://manilastandard.net/opinion/columns/hail-to-the-chair-by-victor-avecilla/230484/public-pay-toilets-and-unisex-public-restrooms.html
+* [3]http://www.manilatimes.net/where-are-the-toilets/242627/
+* [4]https://www.senate.gov.ph/lisdata/2016717278!.pdf
+* [5]https://www.nationalgeographic.com/environment/global-warming/toxic-waste/
+* [6]https://www.ukessays.com/essays/environmental-sciences/the-environmental-effects-of-human-waste-disposal-environmental-sciences-essay.php
