@@ -26,9 +26,8 @@
 
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">ToiletBook Beta Program</a>
+        <a class="navbar-brand js-scroll-trigger" href="/">ToiletBook</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
           <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -69,8 +68,8 @@
     <section class="form" id="register">
       <div class="container h-100">
         <div class="row h-100">
-          <div class="col-lg-12 my-auto">
-            <div class="mx-auto w-50">
+          <div class="col-lg-6 offset-lg-3 col-12 my-auto">
+            <div class="mx-auto">
               <h1>Registration</h1>
               <form id="beta-register">
                 <div class="row">
@@ -102,7 +101,7 @@
                </div>
                <div class="row">
                   <div class="form-group col-lg-12">
-                  <label for="">In a short sentence, explain why you want to contribute</label>
+                  <label for="">In a short summary, explain why you want to contribute</label>
                   <textarea class="form-control" name="" id="" rows="4"></textarea>
                 </div>
                 </div>
