@@ -15,6 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/screenshots', function () {
-    return view('screenshots');
+Route::get('/beta', function () {
+    return view('beta');
 });
