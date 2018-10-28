@@ -26,7 +26,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">ToiletBook</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">ToiletBook Beta Program</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -34,21 +34,57 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#beta">Beta</a>
+              <a class="nav-link js-scroll-trigger" href="#page-top">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#features">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="#register">Register</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <section>
-        <h1>Beta</h1>
+   
+    <header class="masthead">
+      <div class="container h-100">
+          <div class="row h-100">
+          <div class="col-lg-12 my-auto">
+              <div class="header-content mx-auto">
+              <h1 class="mb-5">
+                  The Beta Program
+              </h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In placerat sagittis facilisis. In hac habitasse platea dictumst. Sed et iaculis urna, eu accumsan ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae
+              </p>
+              <a href="#register" class="btn btn-outline btn-xl js-scroll-trigger">Sign Up</a>
+              </div>
+          </div>
+          </div>
+      </div>
+    </header>
+
+    <section class="form" id="register">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-lg-12 my-auto">
+            <div class="mx-auto w-50">
+              <div class="form-group">
+              <label for="">Name</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="">Email</label>
+              <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="">Position</label>
+              <input type="text" class="form-control">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+
     <footer>
       <div class="container">
         <p>&copy; ToiletBook 2018. All Rights Reserved.</p>

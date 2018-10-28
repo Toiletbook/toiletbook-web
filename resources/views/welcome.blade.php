@@ -149,7 +149,7 @@
             </div>-->
             <a href="/beta">
               <div class="button">
-                <button class="btn btn-xl btn-outline-secondary">Register Now</b>
+                <button class="btn btn-xl btn-outline-secondary">Go to Portal</b>
               </div>
             </a>
           </div>
