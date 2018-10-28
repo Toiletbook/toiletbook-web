@@ -8,7 +8,7 @@
     <meta name="description" content="An application designed to provide convenience in finding washrooms">
     <meta name="author" content="Feng Xiao Yue">
 
-    <title>ToiletBook</title>
+    <title>ToiletBook Beta Program</title>
 
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
