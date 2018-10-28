@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="An application designed to provide convenience in finding washrooms">
     <meta name="author" content="Feng Xiao Yue">
+    <meta name="theme-color" content="#63598a"/>
 
     <title>ToiletBook Beta Program</title>
 

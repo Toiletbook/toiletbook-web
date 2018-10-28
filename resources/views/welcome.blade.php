@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="An application designed to provide convenience in finding washrooms">
     <meta name="author" content="Feng Xiao Yue">
+    <meta name="theme-color" content="#63598a"/>
 
     <title>ToiletBook</title>
 
@@ -54,7 +55,7 @@
               <h1 class="mb-5">
                 An application designed to provide convenience in finding washrooms
               </h1>
-              <a href="#beta" class="btn btn-outline btn-xl js-scroll-trigger">Join the Beta Program Now</a>
+              <a href="#beta" class="btn btn-outline btn-xl js-scroll-trigger">Currently in Beta</a>
             </div>
           </div>
           <div class="col-lg-5 my-auto">
@@ -141,14 +142,13 @@
         <div class="row">
           <div class="col-md-8 mx-auto">
             <h2 class="section-heading">A hackathon project turned sociopreneurship initiative</h2>
-            <p>Be part of the beta program</p>
             <!--<div class="badges">
               <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
               <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a>
             </div>-->
             <a href="/beta">
               <div class="button">
-                <button class="btn btn-xl btn-outline-dark">Go to Portal</b>
+                <button class="btn btn-xl btn-outline-dark">Join the Beta Program</button>
               </div>
             </a>
           </div>
