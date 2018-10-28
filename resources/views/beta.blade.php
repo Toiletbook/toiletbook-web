@@ -44,7 +44,7 @@
       </div>
     </nav>
    
-    <header class="masthead">
+    <header class="betahead">
       <div class="container h-100">
           <div class="row h-100">
           <div class="col-lg-12 my-auto">
@@ -53,7 +53,11 @@
                   The Beta Program
               </h1>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In placerat sagittis facilisis. In hac habitasse platea dictumst. Sed et iaculis urna, eu accumsan ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae
+                ToiletBook can potentially help millions and improve overall convenience and sanitation. Currently we're just a very small team of developers.
+                Parts of the project are still in rough progress – from development, to seed data, and even financial sustainability.
+              </p>
+              <p>
+                This beta program is designed to enrich contributors in valuable work experience as well as allow them to be part of the social good this project aims to be part of.
               </p>
               <a href="#register" class="btn btn-outline btn-xl js-scroll-trigger">Sign Up</a>
               </div>
@@ -67,18 +71,48 @@
         <div class="row h-100">
           <div class="col-lg-12 my-auto">
             <div class="mx-auto w-50">
-              <div class="form-group">
-              <label for="">Name</label>
-                <input type="text" class="form-control">
-              </div>
-              <div class="form-group">
-                <label for="">Email</label>
-              <input type="text" class="form-control">
-              </div>
-              <div class="form-group">
-                <label for="">Position</label>
-              <input type="text" class="form-control">
-              </div>
+              <h1>Registration</h1>
+              <form id="beta-register">
+                <div class="row">
+                    <div class="form-group col-lg-6">
+                    <label for="">Name</label>
+                    <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group col-lg-6">
+                      <label for="">Email</label>
+                      <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-lg-6">
+                  <label for="">Position</label>
+                  <select class="form-control">
+                    <option selected>Choose one</option>
+                    <option value="">iOS Developer</option>
+                    <option value="">Android Developer</option>
+                    <option value="">Data Encoder</option>
+                    <option value="">Graphic Designer</option>
+                    <option value="">Business Dev Associate</option>
+                  </select>
+                  </div>
+                  <div class="form-group col-lg-6">
+                  <label for="">Resume</label>
+                  <input type="file" class="form-control" name="" id="">
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="form-group col-lg-12">
+                  <label for="">In a short sentence, explain why you want to contribute</label>
+                  <textarea class="form-control" name="" id="" rows="4"></textarea>
+                </div>
+                </div>
+                <div class="row">
+                  
+                  <div class="form-group col-lg-6 button">
+                    <button class="btn btn-xl btn-outline-secondary">Submit</button>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
