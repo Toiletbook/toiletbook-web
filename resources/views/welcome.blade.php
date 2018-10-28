@@ -104,7 +104,7 @@
                   <div class="feature-item">
                     <i class="icon-map text-primary"></i>
                     <h3>Locating Washrooms</h3>
-                    <p class="text-muted">Our app's core feature - locating washrooms has never been easier</p>
+                    <p class="text-muted">Our app's core feature — locating washrooms has never been easier</p>
                   </div>
                 </div>
                 <div class="col-lg-6">
@@ -120,14 +120,14 @@
                   <div class="feature-item">
                     <i class="icon-list text-primary"></i>
                     <h3>Amenity Information</h3>
-                    <p class="text-muted">Needing bidets? You can sort and filter for washrooms with various amenities</p>
+                    <p class="text-muted">You can sort and filter for washrooms with various amenities</p>
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="feature-item">
                     <i class="icon-people text-primary"></i>
                     <h3>Foot Traffic</h3>
-                    <p class="text-muted">Trying to avoid lines? Foot traffic data is also provided.</p>
+                    <p class="text-muted">Foot traffic data is also provided for those trying to avoid lines</p>
                   </div>
                 </div>
               </div>
