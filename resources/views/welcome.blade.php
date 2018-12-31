@@ -6,10 +6,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="An application designed to provide convenience in finding washrooms">
-    <meta name="author" content="Feng Xiao Yue">
+    <meta name="author" content="Just Because">
     <meta name="theme-color" content="#63598a"/>
 
     <title>ToiletBook</title>
+
+    <!-- Primary Meta Tags -->
+    <title>ToiletBook – a toilet finder app</title>
+    <meta name="title" content="ToiletBook – a toilet finder app">
+    <meta name="description" content="An application designed to provide convenience in finding washrooms">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://toiletbook.space/">
+    <meta property="og:title" content="ToiletBook – a toilet finder app">
+    <meta property="og:description" content="An application designed to provide convenience in finding washrooms">
+    <meta property="og:image" content="img/demo-screen-1.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://toiletbook.space/">
+    <meta property="twitter:title" content="ToiletBook – a toilet finder app">
+    <meta property="twitter:description" content="An application designed to provide convenience in finding washrooms">
+    <meta property="twitter:image" content="img/demo-screen-1.jpg">
 
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
