@@ -72,44 +72,40 @@
           <div class="col-lg-6 offset-lg-3 col-12 my-auto">
             <div class="mx-auto">
               <h1>Registration</h1>
-              <form id="beta-register">
+              <form id="beta-register" action="https://formspree.io/work@justbecause.ph" method="POST">
                 <div class="row">
                     <div class="form-group col-lg-6">
-                    <label for="">Name</label>
-                    <input type="text" class="form-control">
+                    <label for="name">Name *</label>
+                    <input name="name" id="name" type="text" class="form-control" required>
                     </div>
                     <div class="form-group col-lg-6">
-                      <label for="">Email</label>
-                      <input type="text" class="form-control">
+                      <label for="email">Email *</label>
+                      <input name="email" id="email" type="email" class="form-control" required>
                     </div>
                 </div>
                 <div class="row">
                   <div class="form-group col-lg-6">
-                  <label for="">Position</label>
-                  <select class="form-control">
+                  <label for="position">Position *</label>
+                  <select name="position" id="position" class="form-control" required>
                     <option selected>Choose one</option>
-                    <option value="">iOS Developer</option>
-                    <option value="">Android Developer</option>
-                    <option value="">Data Encoder</option>
-                    <option value="">Graphic Designer</option>
-                    <option value="">Business Dev Associate</option>
+                    <option name="android" id="android" value="android">Android Developer</option>
+                    <option name="designer" id="designer" value="designer">Graphic Designer</option>
                   </select>
                   </div>
                   <div class="form-group col-lg-6">
-                  <label for="">Resume</label>
-                  <input type="file" class="form-control" name="" id="">
+                  <label for="resume">Resume *</label>
+                  <input name="resume" id="resume" type="file" class="form-control" required>
                   </div>
                </div>
                <div class="row">
                   <div class="form-group col-lg-12">
-                  <label for="">In a short summary, explain why you want to contribute</label>
-                  <textarea class="form-control" name="" id="" rows="4"></textarea>
+                  <label for="reason">In a short summary, express your interest in this project *</label>
+                  <textarea class="form-control" name="interest" id="interest" rows="4" required></textarea>
                 </div>
                 </div>
                 <div class="row">
-                  
-                  <div class="form-group col-lg-6 button">
-                    <button class="btn btn-xl btn-outline-secondary">Submit</button>
+                  <div class="form-group col-lg-12 button d-flex justify-content-end">
+                    <button type="submit" value="Send" class="btn btn-xl btn-outline-secondary">Submit</button>
                   </div>
                 </div>
               </form>

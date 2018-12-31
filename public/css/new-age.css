@@ -106,11 +106,11 @@ section h2 {
         background-color: transparent;
     }
     #mainNav .navbar-brand {
-        color: fade(white, 70%);
+        color: #fcbd20;
     }
     #mainNav .navbar-brand:hover,
     #mainNav .navbar-brand:focus {
-        color: white;
+        color: #fcbd20;
     }
     #mainNav .navbar-nav > li > a,
     #mainNav .navbar-nav > li > a:focus {
