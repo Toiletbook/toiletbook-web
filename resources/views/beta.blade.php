@@ -121,7 +121,8 @@
 
     <footer>
       <div class="container">
-        <p>&copy; ToiletBook 2018. All Rights Reserved.</p>
+        <p>&copy; Just Because 2019. All Rights Reserved.</p>
+        <p>Contact us at <a href="mailto:hello@justbecause.ph">hello@justbecause.ph</a></p>
         <ul class="list-inline">
           <li class="list-inline-item">
             <a href="#">Privacy</a>
