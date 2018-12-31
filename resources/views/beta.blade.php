@@ -71,7 +71,7 @@
         <div class="row h-100">
           <div class="col-lg-6 offset-lg-3 col-12 my-auto">
             <div class="mx-auto">
-              <h1>Registration</h1>
+              <h1 class="mb-5">Registration</h1>
               <form id="beta-register" action="https://formspree.io/work@justbecause.ph" method="POST">
                 <div class="row">
                     <div class="form-group col-lg-6">
@@ -84,17 +84,19 @@
                     </div>
                 </div>
                 <div class="row">
-                  <div class="form-group col-lg-6">
+                  <div class="form-group col-lg-12">
                   <label for="position">Position *</label>
                   <select name="position" id="position" class="form-control" required>
                     <option selected>Choose one</option>
                     <option name="android" id="android" value="android">Android Developer</option>
                     <option name="designer" id="designer" value="designer">Graphic Designer</option>
                   </select>
+                </div>
+                <div class="row">
                   </div>
-                  <div class="form-group col-lg-6">
-                  <label for="resume">Resume *</label>
-                  <input name="resume" id="resume" type="file" class="form-control" required>
+                  <div class="form-group col-lg-12">
+                  <label for="resume">Link to your resume *</label>
+                  <input name="resume" id="resume" type="text" class="form-control" required>
                   </div>
                </div>
                <div class="row">
