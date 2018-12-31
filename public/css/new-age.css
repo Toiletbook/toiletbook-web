@@ -65,14 +65,14 @@ section h2 {
     letter-spacing: 1px;
 }
 #mainNav .navbar-brand {
-    color: #fdcc52;
+    color: #3b325e;
     font-family: "Catamaran", "Helvetica", "Arial", "sans-serif";
     font-weight: 200;
     letter-spacing: 1px;
 }
 #mainNav .navbar-brand:hover,
 #mainNav .navbar-brand:focus {
-    color: #fcbd20;
+    color: #3b325e;
 }
 #mainNav .navbar-toggler {
     font-size: 12px;
