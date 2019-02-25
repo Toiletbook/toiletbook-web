@@ -52,14 +52,11 @@
               <h1 class="mb-5">
                   The Beta Program
               </h1>
-              <p>
+              <p class="lead">
                 ToiletBook can potentially help millions and improve overall convenience and sanitation. Currently we're just a very small team of developers.
-                Parts of the project are still in rough progress – from development, to seed data, and even financial sustainability.
+                Parts of the project are still in rough progress – from development to seed data.
               </p>
-              <p>
-                This beta program is designed to enrich contributors in valuable work experience as well as allow them to be part of the social good this project aims to be part of.
-              </p>
-              <a href="#register" class="btn btn-outline btn-xl js-scroll-trigger">Sign Up</a>
+              <a href="#register" class="btn btn-outline btn-xl js-scroll-trigger mt-3">Sign Up</a>
               </div>
           </div>
           </div>

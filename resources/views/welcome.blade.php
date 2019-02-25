@@ -9,8 +9,6 @@
     <meta name="author" content="Just Because">
     <meta name="theme-color" content="#63598a"/>
 
-    <title>ToiletBook</title>
-
     <!-- Primary Meta Tags -->
     <title>ToiletBook – a toilet finder app</title>
     <meta name="title" content="ToiletBook – a toilet finder app">
@@ -83,7 +81,7 @@
                 <div class="device">
                   <div class="screen">
                     <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                    <img src="img/demo-screen-1.jpg" class="img-fluid" alt="">
+                    <img src="img/demo-screen-1.jpg" class="img-fluid" alt="Demo Screen with Washroom Details">
                   </div>
                   <div class="button">
                     <!-- You can hook the "home button" to some JavaScript events or just remove it -->
@@ -110,7 +108,7 @@
               <div class="device-mockup iphone6_plus portrait white">
                 <div class="device">
                   <div class="screen">
-                    <img src="img/demo-screen-1.jpg" class="img-fluid" alt="">
+                    <img src="img/demo-screen-1.jpg" class="img-fluid" alt="Demo Screen with Washroom Details">
                   </div>
                 </div>
               </div>
@@ -191,18 +189,15 @@
           new friends!</h2>
         <ul class="list-inline list-social">
           <li class="list-inline-item social-twitter">
-            <a href="#">
+            <a href="https://twitter.com/justbecauseph" target="_blank" rel="noopener noreferrer">
+              <p class="sr-only">Twitter</p>
               <i class="fa fa-twitter"></i>
             </a>
           </li>
           <li class="list-inline-item social-facebook">
-            <a href="#">
+            <a href="https://www.facebook.com/justbecauseph/" target="_blank" rel="noopener noreferrer">
+              <p class="sr-only">Facebook</p>
               <i class="fa fa-facebook"></i>
-            </a>
-          </li>
-          <li class="list-inline-item social-google-plus">
-            <a href="#">
-              <i class="fa fa-envelope"></i>
             </a>
           </li>
         </ul>
@@ -211,7 +206,7 @@
 
     <footer>
       <div class="container">
-        <p>&copy; Just Because 2019. All Rights Reserved.</p>
+        <p>&copy; <a href="https://justbecause.ph" target="_blank" rel="noopener noreferrer">Just Because</a> 2019. All Rights Reserved.</p>
         <p>Contact us at <a href="mailto:hello@justbecause.ph">hello@justbecause.ph</a></p>
         <ul class="list-inline">
           <li class="list-inline-item">
