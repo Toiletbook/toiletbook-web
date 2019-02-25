@@ -9,8 +9,6 @@
     <meta name="author" content="Just Because">
     <meta name="theme-color" content="#63598a"/>
 
-    <title>ToiletBook</title>
-
     <!-- Primary Meta Tags -->
     <title>ToiletBook – a toilet finder app</title>
     <meta name="title" content="ToiletBook – a toilet finder app">
