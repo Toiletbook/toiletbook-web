@@ -189,18 +189,15 @@
           new friends!</h2>
         <ul class="list-inline list-social">
           <li class="list-inline-item social-twitter">
-            <a href="#">
+            <a href="https://twitter.com/justbecauseph" target="_blank" rel="noopener noreferrer">
+              <p class="sr-only">Twitter</p>
               <i class="fa fa-twitter"></i>
             </a>
           </li>
           <li class="list-inline-item social-facebook">
-            <a href="#">
+            <a href="https://www.facebook.com/justbecauseph/" target="_blank" rel="noopener noreferrer">
+              <p class="sr-only">Facebook</p>
               <i class="fa fa-facebook"></i>
-            </a>
-          </li>
-          <li class="list-inline-item social-google-plus">
-            <a href="#">
-              <i class="fa fa-envelope"></i>
             </a>
           </li>
         </ul>
