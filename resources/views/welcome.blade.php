@@ -211,7 +211,7 @@
 
     <footer>
       <div class="container">
-        <p>&copy; Just Because 2019. All Rights Reserved.</p>
+        <p>&copy; <a href="https://justbecause.ph" target="_blank" rel="noopener noreferrer">Just Because</a> 2019. All Rights Reserved.</p>
         <p>Contact us at <a href="mailto:hello@justbecause.ph">hello@justbecause.ph</a></p>
         <ul class="list-inline">
           <li class="list-inline-item">
